@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1000px;
+}
+.card{
+    padding: 3.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:  1.5rem;
+    line-height: 1.5rem;
+    font-family:'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0px 2px 4px 1px;
+}
+.card-img{
+    padding: 0 1rem;
+}
+.card-title{
+    padding: 0.9rem 0.5rem;
+    color: white;
+    font-family: 'Big Shoulders Display';
+    font-size: 1.3rem;
+}
+.card-dec{
+    padding: 0 0.5rem;
+    color: white;
+}
+.card-link{
+    
+    text-align: center;
+    padding: 2.5rem;
+}
+.card-link a{
+
+    text-decoration: none;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+}
+.first{
+   background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+.first a{
+   color: hsl(31, 77%, 52%);
+}
+.second{
+    background-color: hsl(184, 100%, 22%);
+}
+.second a{
+    color: hsl(184, 100%, 22%);
+}
+.third{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+.third a{
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:873px) {
+    .card-grid{
+        grid-template-columns: repeat(1,300px);
+    }
+
+}
+
+
